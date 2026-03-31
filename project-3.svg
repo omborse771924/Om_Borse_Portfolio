@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#0b1324"/>
+  <circle cx="230" cy="560" r="120" fill="#00ffa3" opacity="0.15"/>
+  <circle cx="1010" cy="160" r="130" fill="#7c5cff" opacity="0.18"/>
+  <rect x="100" y="120" width="1000" height="470" rx="28" fill="#121d35" stroke="#00d4ff" stroke-width="3"/>
+  <rect x="150" y="175" width="190" height="360" rx="20" fill="#0d1628"/>
+  <rect x="380" y="175" width="320" height="170" rx="20" fill="#1b2a4a"/>
+  <rect x="730" y="175" width="320" height="170" rx="20" fill="#1b2a4a"/>
+  <rect x="380" y="365" width="670" height="170" rx="20" fill="#162440"/>
+  <text x="600" y="92" text-anchor="middle" font-size="52" fill="#ffffff" font-family="Arial, sans-serif" font-weight="700">MERN Social Media App</text>
+  <text x="600" y="640" text-anchor="middle" font-size="28" fill="#cfe1ff" font-family="Arial, sans-serif">MongoDB • Express • React • Node.js</text>
+</svg>

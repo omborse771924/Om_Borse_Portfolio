@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om Prakash Borse | Portfolio</title>
+  <meta name="description" content="Portfolio of Om Prakash Borse, BTech Computer Engineering student and developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="preloader" aria-hidden="true">
+    <div class="loader-wrap">
+      <div class="loader-ring"></div>
+      <div class="loader-ring loader-ring-2"></div>
+      <div class="loader-text">Loading Portfolio...</div>
+    </div>
+  </div>
+
+  <div id="scroll-progress"></div>
+
+  <button id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo" aria-label="Home">
+        <span class="logo-dot"></span>
+        <span id="navLogoText">Om Prakash Borse</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#activities" class="nav-link">Activities</a></li>
+        <li><a href="#languages" class="nav-link">Languages</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-bg">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content reveal">
+          <p class="hero-kicker" id="heroKicker">Welcome to my portfolio</p>
+          <h1 class="hero-title">Hi, I'm <span class="gradient-text" id="heroName">Om Prakash Borse</span></h1>
+          <h2 class="hero-role"><span id="typingText"></span><span class="cursor">|</span></h2>
+          <p class="hero-description" id="heroDescription"></p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> View Projects</a>
+            <a id="resumeBtn" href="assets/Om_Borse_CV_7.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-file-arrow-down"></i> View Resume
+            </a>
+          </div>
+
+          <div class="hero-socials" id="heroSocials"></div>
+
+          <div class="hero-stats">
+            <div class="stat-card glass reveal">
+              <h3 class="counter" data-target="0">0</h3>
+              <p>Projects</p>
+            </div>
+            <div class="stat-card glass reveal">
+              <h3 class="counter" data-target="0">0</h3>
+              <p>Certificates</p>
+            </div>
+            <div class="stat-card glass reveal">
+              <h3 class="counter" data-target="0">0</h3>
+              <p>Achievements</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image reveal">
+          <div class="profile-frame">
+            <div class="ring ring-one"></div>
+            <div class="ring ring-two"></div>
+            <div class="profile-card glass">
+              <img id="profileImage" src="assets/Gemini_Generated_Image_l21nsbl21nsbl21n.png" alt="Om Prakash Borse" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">About Me</span>
+          <h2>Who I Am</h2>
+          <p>Driven by curiosity, learning, and real-world software development.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass reveal">
+            <h3>Introduction</h3>
+            <p id="aboutText"></p>
+          </div>
+          <div class="about-card glass reveal">
+            <h3>Career Focus</h3>
+            <ul id="aboutHighlights" class="info-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Education</span>
+          <h2>Academic Journey</h2>
+          <p>My learning path and academic milestones.</p>
+        </div>
+        <div class="timeline" id="educationTimeline"></div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Skills</span>
+          <h2>Technical Strengths</h2>
+          <p>Technologies, tools, and problem-solving abilities I work with.</p>
+        </div>
+
+        <div class="skills-wrap">
+          <div class="skills-bars glass reveal" id="skillsBars"></div>
+          <div class="skills-chips glass reveal" id="skillsChips"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Experience</span>
+          <h2>Internships & Industry Exposure</h2>
+          <p>Practical learning through internships and live project collaboration.</p>
+        </div>
+        <div class="timeline" id="experienceTimeline"></div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Projects</span>
+          <h2>Featured Work</h2>
+          <p>Selected projects demonstrating software engineering, AI, and full-stack development.</p>
+        </div>
+        <div class="cards-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Certifications</span>
+          <h2>Verified Learning</h2>
+          <p>Skill-building certifications that support my technical foundation.</p>
+        </div>
+        <div class="cards-grid certificates-grid" id="certificationsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Achievements</span>
+          <h2>Highlights & Recognition</h2>
+          <p>Results that reflect consistency, learning, and competitive spirit.</p>
+        </div>
+        <div class="simple-grid" id="achievementsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="activities">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Activities</span>
+          <h2>Extracurricular Activities</h2>
+          <p>Engagement beyond coursework and classroom learning.</p>
+        </div>
+        <div class="simple-grid" id="activitiesGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="languages">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Languages</span>
+          <h2>Communication Skills</h2>
+          <p>Languages I can use for collaboration and communication.</p>
+        </div>
+        <div class="language-grid" id="languagesGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">Contact</span>
+          <h2>Let's Connect</h2>
+          <p>Open to internships, developer roles, collaborations, and project opportunities.</p>
+        </div>
+
+        <div class="contact-wrap">
+          <div class="contact-info glass reveal">
+            <h3>Contact Information</h3>
+            <div id="contactInfo"></div>
+          </div>
+
+          <form class="contact-form glass reveal" id="contactForm" novalidate>
+            <h3>Send a Message</h3>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" />
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" />
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Enter your message"></textarea>
+              <small class="error"></small>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            <p class="form-success" id="formSuccess"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>
+        <h3 id="footerName">Om Prakash Borse</h3>
+        <p id="footerTagline"></p>
+      </div>
+      <div class="footer-socials" id="footerSocials"></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

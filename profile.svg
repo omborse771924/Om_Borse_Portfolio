@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Om Prakash Borse profile placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c5cff"/>
+      <stop offset="50%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#00ffa3"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="800" fill="#07101c"/>
+  <circle cx="400" cy="400" r="290" fill="url(#bg)" opacity="0.22"/>
+  <circle cx="400" cy="300" r="120" fill="#dfe7fa" opacity="0.95"/>
+  <path d="M230 620c35-105 108-160 170-160s135 55 170 160" fill="#dfe7fa" opacity="0.95"/>
+  <circle cx="400" cy="400" r="360" fill="url(#glow)"/>
+  <text x="400" y="735" text-anchor="middle" font-size="56" font-family="Arial, sans-serif" fill="#ffffff" font-weight="700">Om Prakash Borse</text>
+</svg>
